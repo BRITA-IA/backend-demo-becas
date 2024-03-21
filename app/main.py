@@ -11,5 +11,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.get('/')
+def root():
+    return 'hola mundo'
+
 #routers
 app.include_router(test_router)
