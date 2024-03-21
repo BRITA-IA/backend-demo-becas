@@ -13,4 +13,5 @@ class TestApiController:
         # pregunta del usuario
         additional_instructions = "Sé amable y comprensiva con el usuario"
         response = self.assistant.ask_question_and_get_response(question, additional_instructions)
+        # response = 'hola mundo'
         return response
